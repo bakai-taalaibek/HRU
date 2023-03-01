@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<script>
+
+
+function readNumber () {
+	let shouldBeNumber;
+	do {
+		shouldBeNumber = prompt("Введите число");
+	} while (isNaN(shouldBeNumber));
+
+	if (shouldBeNumber === null || shouldBeNumber === "") {
+		return null;
+	}
+
+	return Number(shouldBeNumber);	
+}
+alert(readNumber());
+
+</script>

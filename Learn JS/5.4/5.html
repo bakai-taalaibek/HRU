@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<script>
+
+function getMaxSubSum(arr) {
+  let sum = 0;
+  let highestPoint = 0;
+  for (let number of arr) {
+    sum += number;
+    highestPoint = Math.max(highestPoint, sum);
+    if (highestPoint < 0) {
+      highestPoint = 0;
+    }
+  }
+  return highestPoint;
+}
+
+</script>

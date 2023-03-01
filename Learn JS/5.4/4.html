@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<script>
+
+
+function sumInput() {
+  let arr = [];
+  while (true) {
+    let x = prompt("Введите число");
+    if (!isNaN(x) && x != "" && x != " " && x != undefined && x != null && typeof(x) != "boolean") {
+      arr.push(+x);
+    }
+    else {
+      return arr.reduce((accumulator, everyElement) => accumulator + everyElement, 0);
+      break;
+    }
+  }
+}
+
+alert(sumInput());
+
+</script>

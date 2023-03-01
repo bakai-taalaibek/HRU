@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<script>
+
+function camelize(str) {
+	str = str.split('-');
+	str = str.map((word) => word[0].toUpperCase() + word.slice(1));
+	str = str.join("");
+	str = str[0].toLowerCase();
+	return str;
+}
+
+</script>

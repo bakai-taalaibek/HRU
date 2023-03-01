@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<script>
+	
+function A() {}
+function B() {}
+
+A.prototype = B.prototype = {};
+
+let a = new A();
+
+alert( a instanceof B ); // прототип определяет тип а не конструктор 
+
+</script>
