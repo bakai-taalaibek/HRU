@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+
+it("Возводит x в степень n", function() {
+  let x = 5;
+
+  let result = x;
+  assert.equal(pow(x, 1), result); // Вместо того, чтобы вставлять x в каждый тест лучше написать отдельные тесты для отдельных случаев. 
+
+  result *= x;
+  assert.equal(pow(x, 2), result);
+
+  result *= x;
+  assert.equal(pow(x, 3), result);
+});
+
+</script>
+<title></title>
+</head>
+<body>
+</body>
+</html>

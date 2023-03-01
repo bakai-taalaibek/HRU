@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+
+let n = prompt("Введите n");
+
+for (let i = 2; i <= n; i++) {
+	counter = 0;
+	for (let j = 2; j <= n; j++) {
+		if (i % j == 0) {
+			counter++;
+		}
+	}
+	if (counter < 2) {
+		alert(i);
+	}
+}
+
+</script>
+<title></title>
+</head>
+<body>
+</body>
+</html>

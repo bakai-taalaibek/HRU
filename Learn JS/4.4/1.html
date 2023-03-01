@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+
+function makeUser() {
+  return {
+    name: "John",
+    ref: this
+  };
+}
+
+let user = makeUser();
+
+alert( user.ref.name ); // Ошибка
+
+</script>
+<title></title>
+</head>
+<body>
+</body>
+</html>

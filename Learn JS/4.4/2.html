@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+
+let calculator = {
+  read(a, b) {
+  this.a = a; 
+  this.b = b;
+  },
+  sum() {
+    return this.a + this.b;
+  },
+  mul() {
+    return this.a * this.b;
+  }
+};
+
+calculator.read(5, 6);
+alert( calculator.sum() );
+alert( calculator.mul() );
+
+</script>
+<title></title>
+</head>
+<body>
+</body>
+</html>

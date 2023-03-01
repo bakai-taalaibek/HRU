@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    // ...
+    return confirm('Родители разрешили?');
+  }
+}
+// Отличий нет. При выполнении if условия функция делает return и дальше не идет. 
+// Если if условие не выполняется то будет выполнен return confirm в любом случае, есть там else или нет.
+
+</script>
+<title></title>
+</head>
+<body>
+</body>
+</html>

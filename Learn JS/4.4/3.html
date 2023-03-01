@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+    return this;
+  },
+  down() {
+    this.step--;
+    return this;
+  },
+  showStep: function() { // показывает текущую ступеньку
+    alert( this.step );
+    return this;
+  }
+};
+
+calculator.read(5, 6);
+alert( calculator.sum() );
+alert( calculator.mul() );
+
+</script>
+<title></title>
+</head>
+<body>
+</body>
+</html>

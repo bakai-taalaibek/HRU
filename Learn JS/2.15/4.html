@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+
+let a = prompt("Какое число нужно возвести в степень?");
+let b = prompt("В какую степень нужно возвести число?");
+
+function pow(a, b) {
+  result = 1;
+  while(b > 0) {
+    result *= a;
+    b--;
+  }
+  return result;
+}
+
+alert(pow(a,b));
+
+</script>
+<title></title>
+</head>
+<body>
+</body>
+</html>
